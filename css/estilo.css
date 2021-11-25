@@ -1,0 +1,238 @@
+/*altera todo arquivo*/
+
+*{margin:0; padding:0; font-family: Arial, Helvetica, sans-serif; font-size: 14px;}
+body{
+    background-color: rgb(226, 225, 225);
+}
+
+#topo{
+    width: 100%;
+    height: 400px;
+    background-color: grey;
+    float: left;
+    position: relative;
+
+}
+#topo figure{
+    margin:228px 42.5% auto;
+    position: relative;
+    z-index: 10;
+}
+#topo figure img{
+    width: 150px;
+    height: auto;
+    background-color: #000;
+    border-radius: 100px;
+    float: left;
+}
+#topo header{
+    width: 100%;
+    position:absolute;
+    margin-top: 120px;
+}
+#topo header h1{
+    text-align: center;
+    font-size: 36px;
+    color: #FFF;
+}
+/*priemira lista*/
+#foto{
+    list-style: none;
+    position: absolute;
+    top:0;
+    left: 0;
+}
+#foto li:hover ul {display: block}
+
+/*icon cam*/
+#cam {
+    width: 50px;
+    height: auto;
+    transition: 0.2s;
+    position: relative;
+    z-index: 10;
+}
+#foto li:hover #cam{width:55px; height: auto;}
+
+/*segunda lista*/
+#foto li ul{
+    z-index: 10;
+    display: none;
+    list-style: none;
+    position: absolute;
+    width: 160px;
+    top: 23px;
+    left: 50px;
+    
+}
+#foto li ul li{
+    color: #777;
+    padding: 10px 9px;
+    margin: 2px 1px;
+    background-color:rgb(243, 241, 241);
+}#foto li ul li:hover{color: #FFF; background-color: #555;} 
+
+/*tirando link da lista*/
+#itens_menu li a {
+    text-decoration: none;
+    color: #0AF;
+    padding: 10px;
+    
+}
+
+/*container camera*/
+#topo nav{
+    border: 0px solid red;
+    position: relative;
+    width: 100px;
+    height: 100px;
+    margin-left: 53%;
+    margin-top: 27%;
+
+}
+
+#menu_perfil{
+    width: 100%;
+    height: 50px;
+    background-color: #222;
+    position: absolute;
+    bottom: 0;
+}
+#menu_perfil a{
+    float: left;
+    text-decoration: none;
+    color: rgb(121, 120, 120);
+    padding: 17px 25px;        
+}#menu_perfil a:hover{
+    background-color: #555;
+     color: #0AF;
+}
+#principal{
+    max-width: 1200px;
+    min-height: 800px;
+    margin: 0 auto;
+    background: #0AF;
+}
+#conteudo{
+    width: 100%;
+    min-height: 400px;
+    float:left;
+}
+h1 {margin-left:20px;
+    font-size: 20px;
+    }
+.dados{margin-left:20px;}
+/*---------------------------------------logar--------------*/
+/*------imagem logar---------*/
+.img  {
+    margin: 5% 0 0 38%;
+    
+}
+/*-----menu logar---*/
+#form{       /* -----quadrado login branco------*/
+    border-radius: 20px;
+    width: 500px;
+    min-height: 400px;
+    margin: 15% auto;
+    overflow: hidden; 
+    background-color: #FFF;   
+    position: relative;
+    border: 1px solid #ccc;
+}#form a{  /*------ texto CADASTRAR------- */
+    float:left;
+    position:absolute;
+    right: 8%;
+
+    bottom:10px;
+    border:0px solid red;
+    text-decoration: none;
+    color:#8b8b8b;  
+      
+}#form a:hover{
+    text-decoration:underline;
+}
+#form p{ /*login do cliente---------texto login */
+    text-align: center;
+    border: 0px solid blue;    
+    margin: 5% auto;
+    overflow: hidden; 
+    color: #5aa2d8;
+    font-size: 36px;          
+}
+.entradas{
+    width: 87%;
+    height: 45px;
+    float: left;
+    margin:5px 5%;
+    border-radius: 20px;
+    border: 1px solid #ccc;    
+}
+/*-------distancia do texto input*/
+form input[type=text],
+form input[type=password]{      
+    padding-left: 10px;    
+}
+label{
+    float:left;
+    margin: 1% 6%;
+    color: #8b8b8b;
+    
+}
+/*--------botão---*/
+.bt_form{
+    background: #5aa2d8;
+    text-align: center;
+    color: #FFF;
+    border: 0;
+    border-radius: 20px;
+    transition:1s;
+    width: 438px;
+    height: 33px;
+    cursor: pointer;   
+           
+}
+form input[type=submit]:hover{
+    background-color: #254b68;
+ }
+ form input[type=text]:focus{
+    outline: 0;
+ }
+ form input[type=password]:focus{
+    outline: 0;
+ }
+ .bt_form_cad{
+ background: #5aa2d8;
+    text-align: center;
+    color: #FFF;
+    border: 0;
+    border-radius: 20px;
+    transition:1s;
+    width: 305px;
+    height: 33px;
+    cursor: pointer;  
+ }
+ /*----------imagens cadastro-----------*/
+ .entradas_img{
+    width: 87%;
+    height: 45px;
+    float: left;
+    margin:5px 5%;
+       
+}
+
+
+
+#rodape{
+    width: 100%;
+    min-height: 40px;
+    float: left;
+    background-color: #222;
+    
+}
+footer p{
+    text-align: center;
+    margin: 20px 0;
+    color: #999;
+}
+
+ 
