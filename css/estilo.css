@@ -121,7 +121,8 @@ body{
 h1 {margin-left:20px;
     font-size: 20px;
     }
-.dados{margin-left:20px;}
+.dados {margin-left:20px;}
+.posts{margin:20px 0 0 20px;}
 /*---------------------------------------logar--------------*/
 /*------imagem logar---------*/
 .img  {
