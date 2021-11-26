@@ -111,7 +111,7 @@ body{
     max-width: 1200px;
     min-height: 800px;
     margin: 0 auto;
-    background: #0AF;
+    background: rgb(193, 207, 207);     /*------------muda a cor no perfil---------------*/
 }
 #conteudo{
     width: 100%;

@@ -11,7 +11,7 @@ include "verifica_login.php"
             <b> Postagem: </b>
             <br>
             <br>      
-            <textarea name="postagem" rows="10" cols="50">
+            <textarea name="postagem" rows="10" cols="50" required>
             </textarea><br><br>
             <input type="submit" value="Publicar">
         </label>     

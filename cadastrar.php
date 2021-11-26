@@ -29,7 +29,7 @@ if($nome != "" && $atividade !="" && $email !="" && $senha !="" && $dica !="" &&
 $pasta = $email;
 
 //criar pasta em php com base em uma verificação #25
-/*
+/**/
 if (file_exists("users/".$pasta)){
     //header("location:cadastre.php");  ---pode ser dessa forma optamos pela de baixo #26
     echo "Você já possui uma pasta<br>";
@@ -38,7 +38,7 @@ if (file_exists("users/".$pasta)){
     mkdir("users/".$pasta,0777);
 }
 
-*/
+
 //Imprimindo os valores armazenados na variáveis
 /*echo "Nome:   ".$nome."<br>";
 echo "atividade:   ".$atividade."<br>"; 
@@ -63,10 +63,10 @@ if($cadastrar){
 }                //serve para cadastrar os dados do formulario no banco de dado
 
 //upload das imagens
-/*
+/**/
 move_uploaded_file($_FILES['capa']['tmp_name'],"users/".$pasta."/".$capa);
 move_uploaded_file($_FILES['perfil']['tmp_name'],"users/".$pasta."/".$perfil);
-*/
+
 echo "<a href='cadastre.php'> Cadastrar outro usuário</a>";
 
 ?>
