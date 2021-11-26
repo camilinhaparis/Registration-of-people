@@ -1,7 +1,7 @@
 <?php
 include "connect.php";
 //Recupero a sessão
-SESSION_START();
+//SESSION_START();
 //$l de login
 $l = isset($_SESSION["login_user"])?$_SESSION["login_user"] :"";
 //$s de senha
