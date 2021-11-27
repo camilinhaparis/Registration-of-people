@@ -9,10 +9,8 @@ echo "nome: $nome_log<br>";*/
 
 if($postagem){
     $sql = "insert into tb_postagens(postagem, id_user) VALUES('$postagem', '$id_log')";
-    mysqli_query($link, $sql);
-    echo "Dados cadastratos com sucesso!<br>";
-    echo "<a href='user.php?page=3'>Nova postagem</a></br>";
-    echo "<a href='user.php?page=2'>Exibir postagens</a></br>";
+    mysqli_query($link, $sql);    
+    header ("location: user.php?page=2");
 }else{
     header('location: user.php');
 }

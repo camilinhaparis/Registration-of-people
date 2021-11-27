@@ -126,9 +126,17 @@ h1 {margin-left:20px;
 /*---------------------------------------logar--------------*/
 /*------imagem logar---------*/
 .img  {
-    margin: 5% 0 0 38%;
-    
+    margin: 5% 0 0 38%;    
 }
+/*estilizção dos icones das postagens*/
+.img_posts{
+    height: 20px;
+    width: auto;
+    margin: 2px;
+    position: relative;
+    top:8px;
+    transition: 0.3s;
+}.img_posts:hover{height: 25px;}
 /*-----menu logar---*/
 #form{       /* -----quadrado login branco------*/
     border-radius: 20px;

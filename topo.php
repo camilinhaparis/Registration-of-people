@@ -2,9 +2,15 @@
     <h1><?php echo $nome_log; ?></h1>
 </header>
 
-<figure>
+<figure id="img_perfil">
     <!--<img src="imagens/avatar.png">    -->
-    <img src="<?php echo "users/$email_log/$perfil_log"?>"> 
+    <img src="<?php 
+    if($perfil_log == "perfil.png"){
+        echo "imagens/$perfil_log";
+    }else{
+        echo "users/$email_log/$perfil_log";
+    }
+?>" id="perfil">
 </figure>
 
 
@@ -12,8 +18,12 @@
     <ul id="foto">
         <li><img src="imagens/cam.png" id="cam" >
             <ul id="itens_menu">
-                <li><a href="upload_foto.php">Upload de foto</a></li>
-                <li><a href="remover_foto.php">Remover foto</a></li>
+                <li><a href="atualizar_fotos.php">Atualizar</a></li>
+                <?php
+                    if($perfil_log != "perfil.png"){
+                ?>
+                <li><a href="remover_fotos.php">Remover fotos</a></li>
+                <?php  }?>
             </ul>
         </li>
     </ul>
