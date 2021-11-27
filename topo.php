@@ -18,7 +18,7 @@
     <ul id="foto">
         <li><img src="imagens/cam.png" id="cam" >
             <ul id="itens_menu">
-                <li><a href="atualizar_fotos.php">Atualizar</a></li>
+                <li><a href="atualiza.php">Atualizar</a></li>
                 <?php
                     if($perfil_log != "perfil.png"){
                 ?>

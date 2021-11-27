@@ -32,9 +32,11 @@ $pasta = $email;
 /**/
 if (file_exists("users/".$pasta)){
     //header("location:cadastre.php");  ---pode ser dessa forma optamos pela de baixo #26
+    $cadastrar = false;
     echo "Você já possui uma pasta<br>";
     echo "<a href='cadastre.php'> Voltar a tela de cadastro</a><br>";
 }else{
+    $cadastrar = true;
     mkdir("users/".$pasta,0777);
 }
 
@@ -50,23 +52,27 @@ echo "Endereço:   ".$endereco."<br>";
 
 echo "Capa:   ".$capa."<br>";
 echo "Tipo de arquivo da capa:" .$capa_tipo."<br>";
+
 echo "Perfil:   ".$perfil."<br>";
 echo "Tipo de arquivo da perfil:" .$perfil_tipo."<br>";
-
 */
+
+
 //nome da variáveis para ser inserido no banco de dado
 if($cadastrar){
     $sql = "INSERT into tb_user(nome, atividade, email, senha, dica, telefone, endereco, perfil, capa) VALUES 
     ('$nome','$atividade','$email','$senha','$dica','$telefone','$endereco','$perfil','$capa');";
     mysqli_query($link,$sql); 
     echo "<a href='perfil.php'>Ir para a tela de login</a><br>";
-}                //serve para cadastrar os dados do formulario no banco de dado
+    //serve para cadastrar os dados do formulario no banco de dado
 
-//upload das imagens
-/**/
-move_uploaded_file($_FILES['capa']['tmp_name'],"users/".$pasta."/".$capa);
-move_uploaded_file($_FILES['perfil']['tmp_name'],"users/".$pasta."/".$perfil);
+    //upload das imagens/**/
+    move_uploaded_file($_FILES['capa']['tmp_name'],"users/".$pasta."/".$capa);
+    move_uploaded_file($_FILES['perfil']['tmp_name'],"users/".$pasta."/".$perfil);
+    echo "<a href='cadastre.php'> Cadastrar outro usuário</a>";
 
-echo "<a href='cadastre.php'> Cadastrar outro usuário</a>";
+}                
+
+
 
 ?>
