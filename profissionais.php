@@ -1,6 +1,7 @@
 <?php
 include "connect.php";
-
+$consulta = "select nome,atividade,telefone from tb_user";
+$con = mysqli_query($link, $consulta);
 
 ?>
 
@@ -34,17 +35,19 @@ include "connect.php";
 				<tr>
 					<th>Nome</th>
 					<th>Atividade</th>
-					<th>Mais</th>
+					<th>Telefone</th>
+					<th>Perfil</th>
 				</tr>
 			</thead>
 			<tbody>
-				<?php foreach ($users as $user) : ?>
+				<?php while($dado = $con->fetch_array()){ ?>
 					<tr>
-						<td><?= $user->nome ?></td>
-						<td></td>
-						<td><a href="usuario.php?u=<?= $user->id_user ?>">Perfil</a></td>
+						<td><?php echo $dado["nome"]; ?></td>
+						<td><?php echo $dado["atividade"]; ?></td>
+						<td><?php echo $dado["telefone"]; ?></td>
+						<td><a href="user.php?page=1">Perfil</a></td>
 					</tr>
-				<?php endforeach; ?>
+				<?php } ?>
 			</tbody>
 		</table>
 	</div>

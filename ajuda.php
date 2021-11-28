@@ -12,13 +12,12 @@
 </head>   
    
 <body>
-<!-----------CABEÇÁRIO------>
-<section id="topo">  
-<?php include "head/cabecalho.php"; ?>
-</section>
+  <!-----------CABEÇÁRIO------>
+  <section id="topo">  
+  <?php include "head/cabecalho.php"; ?>
+  </section>
 
 <section id="corpo">  
-<!----------slide principal----->
 <main>
 
    <!-----------explicação cadastro----------->
@@ -26,41 +25,41 @@
   <h4 class="pb-2 text-center ">Como podemos te ajudar ?</h4>
   <hr>
   <br>
-<section class="container">
-    <div class="row">
-        
-    <div class="card-group">
-  <div class="card">
-      <br>
-  <img src="./img/login.png " height="230" width="330" style="display: block; margin: 0 auto;" />
-    <div class="card-body">
-      <h5 class="card-title">1º Passo: crique em entrar</h5>
-      <p class="card-text">Em segundos você cria sua conta.</p>      
+  <section class="container">
+      <div class="row">
+          
+      <div class="card-group">
+        <div class="card">
+            <br>
+        <img src="./img/login.png " height="230" width="330" style="display: block; margin: 0 auto;" />
+          <div class="card-body">
+            <h5 class="card-title">1º Passo: crique em entrar</h5>
+            <p class="card-text">Em segundos você cria sua conta.</p>      
+          </div>
+        </div>
+          <!-------------->
+        <div class="card">
+            <br>
+        <img src="./img/cadastroperfil.png" height="230" width="330"  style="display: block; margin: 0 auto;"/>
+          <div class="card-body">
+            <h5 class="card-title">2º Passo: cadastre o seu serviço</h5>
+            <p class="card-text">Mantenha sempre atualizada sua conta para que seus clientes possam te encontrar.</p>
+            <!-------------->
+          </div>
+        </div>
+        <div class="card">
+            <br>
+        <img src="./img/negocie.png" height="230" width="330"  style="display: block; margin: 0 auto;"/>
+          <div class="card-body">
+            <h5 class="card-title">3º Passo: negocie direto</h5>
+            <p class="card-text">Faça bons negócios e fidelize seus clientes.</p>
+            
+          </div>
+        </div>
     </div>
-  </div>
-    <!-------------->
-  <div class="card">
-      <br>
-  <img src="./img/cadastroperfil.png" height="230" width="330"  style="display: block; margin: 0 auto;"/>
-    <div class="card-body">
-      <h5 class="card-title">2º Passo: cadastre o seu serviço</h5>
-      <p class="card-text">Mantenha sempre atualizada sua conta para que seus clientes possam te encontrar.</p>
-      <!-------------->
-    </div>
-  </div>
-  <div class="card">
-      <br>
-  <img src="./img/negocie.png" height="230" width="330"  style="display: block; margin: 0 auto;"/>
-    <div class="card-body">
-      <h5 class="card-title">3º Passo: negocie direto</h5>
-      <p class="card-text">Faça bons negócios e fidelize seus clientes.</p>
-      
-    </div>
-  </div>
-</div>
-    </div>
+      </div>
 
-</section>
+  </section>
 
       
 </main>

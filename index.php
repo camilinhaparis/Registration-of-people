@@ -169,7 +169,7 @@ include "connect.php";
         style= "background-image: url('img/fotomenina.jpg');" ></svg>
         <h2>Camila</h2>
         <p>Another exciting bit of representative placeholder content.</p>
-        <p><a class="btn btn-secondary" href="usuario.php?u=6">View details &raquo;</a></p>
+        <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
         </div><!-- /.col-lg-4 -->
 
         <div class="col-lg-4">

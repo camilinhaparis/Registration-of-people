@@ -18,7 +18,7 @@
 </section>
 
 <section id="corpo">  
-<!----------slide principal----->
+
 <main>
   <br>
 <section id="sobre">    

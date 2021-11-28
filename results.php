@@ -25,10 +25,14 @@ include "connect.php";
 </header>
 
 <body>
-<section id="topo">  
-<?php include "head/cabecalho.php"; ?>
-</section>
-<br>
+
+    <section id="topo">  
+    <?php include "head/cabecalho.php"; ?>
+    </section>
+    <br>
+
+
+
 <section class="container">
 <?php
     $buscar=$_POST['buscar'];
@@ -53,6 +57,8 @@ include "connect.php";
 
 ?>
 </section>
-</body>
 
+
+   
+</body>
 </html>
