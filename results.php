@@ -1,8 +1,10 @@
 <?php
+
 include "connect.php";
 
-
 ?>
+
+
 
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -20,35 +22,37 @@ include "connect.php";
     <link rel="stylesheet" href="css/main.css" >
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 	<title>Ajudaí</title>
-</head>
+</header>
 
 <body>
 <section id="topo">  
 <?php include "head/cabecalho.php"; ?>
 </section>
+<br>
+<section class="container">
+<?php
+    $buscar=$_POST['buscar'];
+    $sql = mysqli_query ($link, "SELECT * FROM tb_user WHERE atividade LIKE '%".$buscar."%' ");
+    $row = mysqli_num_rows($sql);
+    if($row > 0) {
+        while($linha = mysqli_fetch_array($sql)){
+            $nome = $linha['nome'];
+            $atividade = $linha['atividade'];
+            $telefone = $linha['telefone'];
+            $perfil = $linha['perfil'];
+            echo "<strong>Nome: </strong>" .@$nome;
+            echo "<br/></br>";
+            echo "<strong>Profissional: </strong>" .@$atividade;
+            echo "<br/></br>";
+            echo "<strong>Telefone: </strong>" .@$telefone;
+            echo "<br/><hr/>";
+        }
+    }else{
+        echo "Desculpe, nenhum profissional nessa área foi encontrado!";
+    }
 
-<main>
-	<div class="container ">
-		<table class="table table-striped mt-5">
-			<thead class="thead-dark">
-				<tr>
-					<th>Nome</th>
-					<th>Atividade</th>
-					<th>Mais</th>
-				</tr>
-			</thead>
-			<tbody>
-				<?php foreach ($users as $user) : ?>
-					<tr>
-						<td><?= $user->nome ?></td>
-						<td></td>
-						<td><a href="usuario.php?u=<?= $user->id_user ?>">Perfil</a></td>
-					</tr>
-				<?php endforeach; ?>
-			</tbody>
-		</table>
-	</div>
-</main>	
-
+?>
+</section>
 </body>
+
 </html>

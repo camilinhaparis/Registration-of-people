@@ -1,3 +1,7 @@
+<?php
+include "connect.php";
+?>
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -56,16 +60,19 @@
 <h2 class="pb-2 text-center ">Qual serviço especializado você procura?</h2>
   <h6 class="pb-2 text-center ">Ache o profissional que você precisa aqui, encanador, eletrecista, carpinteiro...</h6>
 
-<section class="container">    
-    <nav class="navbar navbar-light" style="background-color: #e3f2fd;">
-    <div class="container-fluid">
-    <form class="d-flex">
-      <input class="form-control me-2" type="search" placeholder="Pesquise por serviço" aria-label="Search">
-      <input type="text"class="form-control me-2" placeholder=" CEP" aria-label="Zip">
-      <button class="btn btn-outline-success" type="submit">Buscar</button>
-    </form>
+<section class="container"> 
+  <div class="container">     
+      <nav class="navbar navbar-light" style="background-color: #e3f2fd; margin: 0 160px 0 160px;">
+        <div class="container-fluid ">
+          <form class="d-flex" name="searchform" method="post" action="results.php"  >
+            <input class="form-control me-2" type="text" name="buscar" 
+            placeholder="Pesquise por serviço" aria-label="Search">
+            <!---<input type="text"class="form-control me-2" placeholder=" CEP" aria-label="Zip">--->
+            <button class="btn btn-outline-primary" type="submit">Buscar</button>
+          </form>
+        </div>
+      </nav>
   </div>
-</nav>
 </section>
 
 <!-----------explicação cadastro----------->
@@ -128,7 +135,7 @@
       <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" 
       style="background-image: url('img/anuncie-1.jpg');">
         <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-          <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Se você viu isso, seus cliente também vão ver! Anuncie </h2>          
+          <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Se você viu isso, seus clientes também vão ver! Anuncie </h2>          
         </div>
       </div>
     </div>
