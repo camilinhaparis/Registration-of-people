@@ -32,7 +32,7 @@ include "connect.php";
 			<thead class="thead-dark">
 				<tr>
 					<th>Nome</th>
-					<th>Função</th>
+					<th>Atividade</th>
 					<th>Mais</th>
 				</tr>
 			</thead>

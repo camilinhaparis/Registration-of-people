@@ -63,13 +63,15 @@ if($cadastrar){
     $sql = "INSERT into tb_user(nome, atividade, email, senha, dica, telefone, endereco, perfil, capa) VALUES 
     ('$nome','$atividade','$email','$senha','$dica','$telefone','$endereco','$perfil','$capa');";
     mysqli_query($link,$sql); 
-    echo "<a href='perfil.php'>Ir para a tela de login</a><br>";
+    //echo "<a href='perfil.php'>Ir para a tela de login</a><br>";
     //serve para cadastrar os dados do formulario no banco de dado
 
     //upload das imagens/**/
     move_uploaded_file($_FILES['capa']['tmp_name'],"users/".$pasta."/".$capa);
     move_uploaded_file($_FILES['perfil']['tmp_name'],"users/".$pasta."/".$perfil);
-    echo "<a href='cadastre.php'> Cadastrar outro usuário</a>";
+    //echo "<a href='cadastre.php'> Cadastrar outro usuário</a>";
+
+    header("location:user.php");
 
 }                
 

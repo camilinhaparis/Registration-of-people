@@ -1,3 +1,9 @@
+<?php 
+include "connect.php";
+SESSION_START();
+include "verifica_login.php";
+?>
+
 <!doctype html>
 <html lang="pt-br">
   <head>
@@ -20,7 +26,7 @@
       <label>
       Imagem da capa:*
       </label>
-      <input type="file" name="capa"  class="entradas_img" required><br>
+      <input type="file" name="capa"  class="entradas_img" required ><br>
 
       <label>
       Imagem de perfil:*
