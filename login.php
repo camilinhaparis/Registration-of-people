@@ -2,12 +2,8 @@
 //arquivo de login
 include "connect.php";
 
-
-
 $login = $_POST["login"];
 $senha = $_POST["senha"];
-
-
 
 if($login && $senha){
     $sql = mysqli_query($link, "select * from tb_user WHERE email = '$login'");

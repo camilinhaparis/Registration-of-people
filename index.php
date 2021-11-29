@@ -62,7 +62,7 @@ include "connect.php";
 
 <section class="container"> 
   <div class="container">     
-      <nav class="navbar navbar-light" style="background-color: #e3f2fd; margin: 0 160px 0 160px;">
+      <nav class="navbar navbar-light" style="background-color: #e3f2fd; ">
         <div class="container-fluid ">
           <form class="d-flex" name="searchform" method="post" action="results.php"  >
             <input class="form-control me-2" type="text" name="buscar" 
@@ -163,30 +163,30 @@ include "connect.php";
 <div class="row">
       <div class="col-lg-4">
 
-        <svg class="bd-placeholder-img rounded-circle " width="140" height="140" 
+        <svg class="bd-placeholder-img rounded-circle " width="130" height="130" 
         xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" 
         preserveAspectRatio="xMidYMid slice" 
         style= "background-image: url('img/fotomenina.jpg');" ></svg>
         <h2>Camila</h2>
-        <p>Another exciting bit of representative placeholder content.</p>
-        <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
+        <p>Em desenvolvimento.</p>
+        <p><a class="btn btn-secondary" href="destaques.php">View details &raquo;</a></p>
         </div><!-- /.col-lg-4 -->
 
         <div class="col-lg-4">
-        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" 
+        <svg class="bd-placeholder-img rounded-circle" width="130" height="130" 
         xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" 
         preserveAspectRatio="xMidYMid slice" style= "background-image: url('img/fotomenino.png');" ></svg>
         <h2>Guilherme</h2>
-        <p>Another exciting bit of representative placeholder content.</p>
+        <p>Em desenvolvimento.</p>
         <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
         </div><!-- /.col-lg-4 -->
 
         <div class="col-lg-4">
-        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" 
+        <svg class="bd-placeholder-img rounded-circle" width="130" height="130" 
         xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" 
         preserveAspectRatio="xMidYMid slice" style= "background-image: url('img/fotomenino.png');" ></svg>
         <h2>Mauro</h2>
-        <p>Another exciting bit of representative placeholder content.</p>
+        <p>Em desenvolvimento.</p>
         <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
       </div><!-- /.col-lg-4 -->
     </div>

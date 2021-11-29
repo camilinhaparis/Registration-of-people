@@ -17,11 +17,13 @@ if(isset($_SESSION["login_user"]) && isset($_SESSION["senha_user"])){
 </head>   
    
 <body>
-  <!-----------seção principal do site------>
+
+
 <section id="form"> 
-  <div class="img">
-    <img src="img/Ajudai.png" />
-  </div>
+<div class="img">
+  <a href="index.php" class="classe1"><img src="img/Ajudai.png" /></a>
+  </div>  
+ <br>
   <p class="cliente">Login do Cliente </p>
     <form action="login.php" method="post" >
       <label>

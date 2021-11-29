@@ -10,10 +10,11 @@
 <body>
   <!-----------seção principal do site------>
 <section id="form"> 
-  <div class="img">
-    <img src="img/Ajudai.png" />
-  </div>
-  <p class="cliente">Login do Cliente </p>
+<div class="img">
+  <a href="index.php" class="classe2"><img src="img/Ajudai.png" /></a>
+  </div> 
+  <br> 
+  <p class="cliente">Cadastro do Cliente </p>
     <form action="cadastrar.php" method="post" enctype="multipart/form-data">
       <label>
       Nome:* 
@@ -61,10 +62,11 @@
       <input type="file" name="perfil"  class="entradas_img" required><br>
 
       <label>
-      <input type="submit" value="CADASTRAR" class="bt_form_cad">      
+      <input type="submit" value="CADASTRAR" class="bt_form_cad">        
       </label>
     </form>  
-    <a href="perfil.php">>>LOGAR<<</a>
+    <a href="perfil.php" >LOGAR</a><br>
+    
 </section>      
 
 </body>

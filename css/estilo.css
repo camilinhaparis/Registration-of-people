@@ -151,15 +151,30 @@ h1 {margin-left:20px;
     float:left;
     position:absolute;
     right: 8%;
-
     bottom:10px;
     border:0px solid red;
     text-decoration: none;
     color:#8b8b8b;  
-      
+     
 }#form a:hover{
     text-decoration:underline;
-}
+}#form a.classe1:link, a.classe1:visited {
+	border:0px solid red;
+    float:left;
+    position:absolute;
+    right: 40%;
+    bottom: 86%;      
+    
+	}#form a.classe2:link, a.classe1:visited {
+        border:0px solid red;
+        float:left;
+        position:absolute;
+        right: 40%;
+        bottom: 94%;      
+        
+        }
+        
+
 #form p{ /*login do cliente---------texto login */
     text-align: center;
     border: 0px solid blue;    
